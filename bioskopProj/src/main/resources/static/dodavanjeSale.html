@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <title>Dodavanje sale</title>
+	    <meta charset="utf-8"/>
+	    <link rel="stylesheet" type="text/css" href="/css/reg.css"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  		<script src="/js/jquery.min.js"></script>
+  		<script type="text/javascript" src="/js/dodavanjeSale.js"></script>	
+</head>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Pocetna</a></li>
+        <li><a href="bioskop.html">Bioskop opcije</a></li>
+        <li><a href="film.html">Film opcije</a></li>
+        <li><a href="prijava.html">Prijavite se</a></li>
+       <li><a href="registracija.html">Registracija</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+<form action="bioskop.html">
+  <div class="container">
+   <div class="row content">
+  <div class="col-sm-10 text-left">
+    <h1>Dodavanje sale</h1>
+    <p>Popunite sva polja da biste dodali salu</p>
+    <hr>	
+    <label for="kapacitet"><b>Kapacitet</b></label>
+    <input type="text" placeholder="Unesite kapacitet"  id="kapacitet" required>
+    <label for="oznaka"><b>Oznaka</b></label>
+    <input type="text" placeholder="Unesite oznaku"  id="oznaka" required>	
+     <p>Klikom na dugme dodacete salu u listu</p>
+    <button type="submit" class="registerbtn">Dodaj salu</button>
+    </div>
+      <div class="col-sm-2 sidenav">
+      <span style='font-size:100px;'>&#8595;</span>
+    <hr/>
+      <h3><a href="izmenaBrisanjeSala.html">Izmena sala</a></h3>
+    <hr/>
+    <span style='font-size:100px;'>&#8593;</span>
+    </div>
+  </div>
+  </div>
+</form>
+</html>

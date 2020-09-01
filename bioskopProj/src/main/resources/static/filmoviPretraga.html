@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	    <title>Pretraga po kriterijumu</title>
+	    <meta charset="utf-8"/>
+	    <link rel="stylesheet" type="text/css" href="/css/reg.css"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  		<script src="/js/jquery.min.js"></script>
+  		<script type="text/javascript" src="/js/filmoviPretraga.js"></script>	
+</head>
+	
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Pocetna</a></li>
+        <li><a href="bioskop.html">Bioskop opcije</a></li>
+        <li><a href="film.html">Film opcije</a></li>
+        <li><a href="prijava.html">Prijavite se</a></li>
+       <li><a href="registracija.html">Registracija</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+<form action="prijava.html">
+  <div class="container">
+    <h1>Pretraga filmova po kriterijumu(moze i pojedinacno)</h1>
+    <p>Odaberite kriterijum</p>
+    <hr>	
+    <label for="naziv"><b>Naziv</b></label>
+    <input type="text"  id="naziv" >
+    <label for="zanr"><b>Zanr</b></label>
+    <input type="text"   id="zanr" >
+    <label for="opis"><b>Opis</b></label>
+    <input type="text"   id="opis" >	
+    <label for="ocena"><b>Ocena</b></label>
+    <input type="text"   id="ocena" >
+    <label for="cena"><b>Cena</b></label>
+    <input type="text"   id="cena" >
+    <label for="dan"><b>Vreme projekcije</b></label>
+    <input type="text"   id="dan" >
+    <hr>
+    <button type="submit" class="registerbtn">Pretrazi</button>
+ </div>
+  
+  
+  <div class="col-sm-2 sidenav">
+  </div>
+  <div class="col-sm-8 text-left">
+  <table class="table table-dark table-striped" id="pretrazeno">
+	<thead>
+      <tr> 
+        <th scope="col">Naziv</th>
+        <th scope="col">Zanr</th>
+        <th scope="col">Opis</th>
+        <th scope="col">Ocena</th>
+        <th scope="col">Cena</th>
+        <th scope="col">Vreme projekcije</th>
+      </tr>
+     </thead>
+  </table>
+  </div>
+  <div class="col-sm-2 sidenav">
+  </div>
+</form>
+</html>

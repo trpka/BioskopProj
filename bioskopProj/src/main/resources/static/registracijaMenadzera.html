@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+ 	<title>Registracija menadzera</title>
+ 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/reg.css"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+  	<script type="text/javascript" src="/js/registracijaMenadzera.js"></script>
+</head>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Pocetna</a></li>
+        <li><a href="bioskop.html">Bioskop opcije</a></li>
+        <li><a href="film.html">Film opcije</a></li>
+        <li><a href="prijava.html">Prijavite se</a></li>
+       <li><a href="registracija.html">Registracija</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form action="prijava.html">
+  <div class="container">
+    <h1>Registracija(menadzer)</h1>
+    <p>Za uspesnu registraciju neophodno je popuniti sva polja</p>
+    <hr>	
+    <label for="name"><b>Ime</b></label>
+    <input type="text" placeholder="Unesite ime"  id="name" required>
+    <label for="surname"><b>Prezime</b></label>
+    <input type="text" placeholder="Unesite prezime"  id="surname" required>
+    <label for="userName"><b>Korisnicko ime</b></label>
+    <input type="text" placeholder="Unesite korisnicko ime"  id="userName" required>
+    <label for="password"><b>Lozinka</b></label>
+    <input type="password" placeholder="Unesite lozinku"  id="password" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Unesite Email"  id="email" required>
+    <label for="Date"><b>Datum</b></label>
+    <input type="text" placeholder="Unesite datum"  id="Date" required>
+    <label for="contactTel"><b>Kontakt telefon</b></label>
+    <input type="text" placeholder="Unesite kontakt telefon"  id="contactTel" required>    
+    <hr>
+    <p>Kliknite na dugme da potvrdite registraciju</p>
+    <button type="submit" class="registerbtn">Registruj se</button>
+    </div>
+</form>
+</html>

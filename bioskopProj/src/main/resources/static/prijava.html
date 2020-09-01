@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	 <title>Prijava korisnika</title>
+     <meta charset="utf-8"/>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" type="text/css" href="/css/prijava.css"/>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	 <script src="/js/jquery.min.js"></script>
+  	<script type="text/javascript" src="/js/prijava.js"></script>
+</head>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Pocetna</a></li>
+        <li><a href="bioskop.html">Bioskop opcije</a></li>
+        <li><a href="film.html">Film opcije</a></li>
+        <li class="active"><a href="prijava.html">Prijavite se</a></li>
+       <li><a href="registracija.html">Registracija</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<form>
+    <div class="container">
+    <h1>Prijava</h1>
+    <p>Ulogujte se na stranicu, popunite sva polja!</p>
+    <hr>	
+    <label for="userName"><b>Korisnicko ime</b></label>
+    <input type="text" placeholder="Unesite korisnicko ime"  id="userName" required>
+    <label for="password"><b>Lozinka</b></label>
+    <input type="password" placeholder="Unesite lozinku"  id="password" required>
+     <p>Kliknite na dugme da biste usli na stranicu</p>
+    <button type="submit" class="registerbtn">Prijavi se</button>
+  </div>
+  
+</form>
+</html>
